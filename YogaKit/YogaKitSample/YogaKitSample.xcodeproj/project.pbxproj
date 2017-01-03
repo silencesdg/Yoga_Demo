@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		13687D481DF8748400E7C260 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13687D471DF8748400E7C260 /* main.m */; };
 		13687D4B1DF8748400E7C260 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13687D4A1DF8748400E7C260 /* AppDelegate.m */; };
-		13687D4E1DF8748400E7C260 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13687D4D1DF8748400E7C260 /* ViewController.m */; };
 		13687D531DF8748400E7C260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13687D521DF8748400E7C260 /* Assets.xcassets */; };
 		13687D781DF878C600E7C260 /* YGEnums.h in yoga */ = {isa = PBXBuildFile; fileRef = 13687D5E1DF8778F00E7C260 /* YGEnums.h */; };
 		13687D791DF878C600E7C260 /* YGMacros.h in yoga */ = {isa = PBXBuildFile; fileRef = 13687D5F1DF8778F00E7C260 /* YGMacros.h */; };
@@ -21,6 +20,7 @@
 		13687D851DF87D1E00E7C260 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13687D841DF87D1E00E7C260 /* UIKit.framework */; };
 		13687D871DF87D2400E7C260 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13687D861DF87D2400E7C260 /* Foundation.framework */; };
 		3D2C75D41E1B4586009BD6D9 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C75D31E1B4586009BD6D9 /* DemoViewController.m */; };
+		3D2C75D71E1B4BCF009BD6D9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C75D61E1B4BCF009BD6D9 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,8 +55,6 @@
 		13687D471DF8748400E7C260 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13687D491DF8748400E7C260 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13687D4A1DF8748400E7C260 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		13687D4C1DF8748400E7C260 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		13687D4D1DF8748400E7C260 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13687D521DF8748400E7C260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13687D571DF8748400E7C260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13687D5E1DF8778F00E7C260 /* YGEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGEnums.h; sourceTree = "<group>"; };
@@ -71,6 +69,8 @@
 		13687D861DF87D2400E7C260 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D2C75D21E1B4586009BD6D9 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		3D2C75D31E1B4586009BD6D9 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		3D2C75D51E1B4BCF009BD6D9 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3D2C75D61E1B4BCF009BD6D9 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 			children = (
 				13687D491DF8748400E7C260 /* AppDelegate.h */,
 				13687D4A1DF8748400E7C260 /* AppDelegate.m */,
-				13687D4C1DF8748400E7C260 /* ViewController.h */,
-				13687D4D1DF8748400E7C260 /* ViewController.m */,
+				3D2C75D51E1B4BCF009BD6D9 /* TableViewController.h */,
+				3D2C75D61E1B4BCF009BD6D9 /* TableViewController.m */,
 				3D2C75D21E1B4586009BD6D9 /* DemoViewController.h */,
 				3D2C75D31E1B4586009BD6D9 /* DemoViewController.m */,
 				13687D521DF8748400E7C260 /* Assets.xcassets */,
@@ -234,11 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13687D801DF87CEC00E7C260 /* UIView+Yoga.m in Sources */,
-				13687D4E1DF8748400E7C260 /* ViewController.m in Sources */,
 				13687D4B1DF8748400E7C260 /* AppDelegate.m in Sources */,
 				13687D821DF87CF200E7C260 /* Yoga.c in Sources */,
 				13687D811DF87CF200E7C260 /* YGNodeList.c in Sources */,
 				3D2C75D41E1B4586009BD6D9 /* DemoViewController.m in Sources */,
+				3D2C75D71E1B4BCF009BD6D9 /* TableViewController.m in Sources */,
 				13687D481DF8748400E7C260 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

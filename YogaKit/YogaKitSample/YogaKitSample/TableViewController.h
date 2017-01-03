@@ -1,5 +1,5 @@
 //
-//  DemoViewController.h
+//  TableViewController.h
 //  YogaKitSample
 //
 //  Created by skladmin on 2017/1/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DemoViewController : UIViewController
-
-@property (nonatomic, strong) NSString *identifier;
+@interface TableViewController : UITableViewController
 
 @end
